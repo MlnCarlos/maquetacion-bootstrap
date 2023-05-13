@@ -1,0 +1,79 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); /* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
+:root {
+    /* fuentes */
+    --nav1_5:  'DM Sans', sans-serif;
+    --titulo_principal: 'Signika', sans-serif;
+    --titulo_principal_amarillo: 'Segoe Print', sans-serif;
+    --subtitulos: 'Roboto', sans-serif;
+    /* coloes */
+    --amarillo: #FACC0A;
+    --negro: #333333;
+    --fondo_naranja_btns: #E94438;
+    --fondo_gris_btns: #FDFDFF;
+}
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./images/fondo.svg)  ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.contenedor_general_u15{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+    .cuerpo_izquierda_u15{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .cuerpo_izquierda_u15 img{
+            margin-top: 55px;
+            width: 70%;
+        }
+    .cuerpo_derecha_u15{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--subtitulos);
+        margin-right: 5%;
+    }
+        .cuerpo_derecha_u15 h1{
+            font-family: var(--titulo_principal);
+            font-style: normal;
+            font-weight: 300;
+            font-size: 40.4372px;
+            line-height: 123.19%;
+            /* or 50px */
+            text-align: center;
+            letter-spacing: 0.005em;
+        }
+        .cuerpo_derecha_u15 p{
+            font-family: var(--subtitulos);
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 123.19%;
+            /* or 30px */
+            text-align: center;
+            letter-spacing: 0.005em;
+            color: var(--negro);
+        }

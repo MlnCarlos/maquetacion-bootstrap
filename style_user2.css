@@ -1,0 +1,103 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); /* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
+:root {
+    /* fuentes */
+    --nav1_5:  'DM Sans', sans-serif;
+    --titulo_principal: 'Signika', sans-serif;
+    --titulo_principal_amarillo: 'Segoe Print', sans-serif;
+    --subtitulos: 'Roboto', sans-serif;
+    /* coloes */
+    --amarillo: #FACC0A;
+    --negro: #333333;
+    --fondo_naranja_btns: #E94438;
+    --fondo_gris_btns: #FDFDFF;
+}
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./images/fondo.svg)  ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.contenedor_general_u2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .header_u2{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--nav1_5);
+        align-items: center;
+        justify-content: center;
+        margin: 13px;
+    }
+
+    .cuerpo_u2{
+        width: 80%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+        .card_naranja{
+            width: 200.54px;
+            height: 243.47px;
+            background: #E94438;
+            box-shadow: inset 0.828673px -1.65735px 3.31469px rgba(0, 0, 0, 0.1);
+            border-radius: 10.7727px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 3%;
+        }
+            .card_naranja img{
+                width: 92.45px;
+                height: 70.65px;
+            }
+            .card_naranja p{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16.5735px;
+                line-height: 20px;
+                color: #FDFDFF;
+            }
+        .card{
+            width: 200.54px;
+            height: 243.47px;
+            background: var(--fondo_gris_btns);
+            box-shadow: inset 0.828673px -1.65735px 3.31469px rgba(0, 0, 0, 0.1);
+            border-radius: 10.7727px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 3%;
+        }
+     .btn_central{
+        width: 245px;
+        height: 50px;
+        background: var(--fondo_gris_btns);
+        border: 1px solid #E94438;
+        border-radius: 29px;
+        color: var(--fondo_naranja_btns);
+    }   
