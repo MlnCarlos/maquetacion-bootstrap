@@ -32,6 +32,13 @@ body {
     width: 100%;
     height: 80vh;
 }
+.logo_poweroros{
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
 .contededor_sup_u12{
     width: 100%;
     display: flex;

@@ -37,6 +37,13 @@ body {
     justify-content:center ;
     align-items: center; 
 }
+.logo_poweroros{
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
 
 .seccion_izq_u3{
     width: 45%;
@@ -46,9 +53,10 @@ body {
 
 .seccion_der_u3{
     width: 45%;
+    height: 95vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between ;
+    justify-content: space-around;
     align-items: center; 
 }
     .hijo1{

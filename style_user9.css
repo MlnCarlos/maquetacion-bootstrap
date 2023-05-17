@@ -35,7 +35,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+}
+.logo_poweroros{
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
 }
     .contenedor_general_u9 .titulo_u9{
         display: flex;

@@ -36,7 +36,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.logo_poweroros{
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
 .seccion_izquierda_u4{
     width: 50%;
     height: 700px;
@@ -137,11 +143,11 @@ body {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
         .seccion_izquierda_u4 .sub_cuerpo_tres h1{
-            width: 50%;
+            width: 40%;
             font-family: var(--subtitulos);
             font-style: normal;
             font-weight: 700;

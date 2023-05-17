@@ -36,7 +36,13 @@ body {
     align-items: center;
     margin-top: 30px;
 }
-
+.logo_poweroros{
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
     .seccion_1_u14{
         height: 500px;
         width: 20%;

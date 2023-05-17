@@ -37,6 +37,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+.logo_poweroros{
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
 .seccion_izq_u6{
     width: 45%;
 }

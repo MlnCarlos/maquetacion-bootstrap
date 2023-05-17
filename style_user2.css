@@ -37,6 +37,13 @@ body {
     height: 100vh;
 }
 
+.logo_poweroros{
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
     .header_u2{
         width: 100%;
         height: 100px;
