@@ -23,7 +23,7 @@
 
 body {
     min-height: 100vh;
-    background-image: url(./images/imagenFondoEjemplocarlos.svg)  ;
+    background-image: url(./images/fondo.svg);
     background-repeat: no-repeat;
     background-size: cover; 
 }

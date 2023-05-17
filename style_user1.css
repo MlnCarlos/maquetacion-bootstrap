@@ -74,7 +74,11 @@ body {
                 align-items: center;
                 width: 60%;
                 justify-content: space-around;
+
             }  
+                .seccion2_u1 a{
+                    text-decoration: none;
+                }
 
         .seccion3_u1{
             display: flex;
