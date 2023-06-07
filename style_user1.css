@@ -32,8 +32,10 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
     .header_u1{
+        
         width: 100%;
         padding: 30px;
         display: flex;
@@ -41,6 +43,7 @@ body {
         font-family: var(--nav1_5);
     }
         .logo_poweroros{
+            
             width: 126px;
             height: 126px;
             position: fixed;
@@ -76,7 +79,7 @@ body {
                 justify-content: space-around;
 
             }  
-                .seccion2_u1 a{
+                 a{
                     text-decoration: none;
                 }
 
@@ -111,6 +114,7 @@ body {
     height: 500px;
     display: flex;
     flex-direction: row;
+    
 }
 
     .cuerpo_u1_derecha{
