@@ -14,7 +14,10 @@
     --fondo_naranja_btns: #E94438;
     --fondo_gris_btns: #FDFDFF;
 }
-  
+.bordeJaime{
+    border: solid red 3PX;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -34,8 +37,10 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap-reverse;
+
 }
 .logo_poweroros{
     width: 126px;
@@ -45,7 +50,10 @@ body {
     left: 3%;
 }
 .seccion_izq_u6{
-    width: 45%;
+    width: 450px;
+}
+.seccion_izq_u6 img{
+    width: 100%;
 }
 
 .seccion_der_u6{
@@ -83,9 +91,11 @@ body {
         margin-left: 2px;
     }
 .hijo3{
-    width: 80%;
+    width: 100%;
     height: 10vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
     .hijo3 .subHijo3 .hijoSubHijo3-1{
@@ -113,7 +123,7 @@ body {
         color: #01C550;
     }
     .hijo3 .subHijo3-2 input{
-        width: 215px;
+        width: 205px;
         height: 51px;
         background: #E94438;
         border-radius: 31px;
@@ -125,13 +135,15 @@ body {
         font-weight: 500;
         font-size: 25px;
         line-height: 33px;
-        margin-left: 160px;
+        /* margin-left: 30%; */
     }
 
     .hijo4{
-        width: 80%;
+        width: 100%;
         height: 10vh;
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
     }
         .hijo4 .subHijo4 .hijoSubHijo4-1{
@@ -170,7 +182,7 @@ body {
             font-weight: 500;
             font-size: 25px;
             line-height: 33px;
-            margin-left: 160px;
+            /* margin-left: 160px; */
         }
 .hijo5{
     width: 80%;
@@ -179,7 +191,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 35px;
+    margin-top: 1vh;
 }
     .hijo5 p{
         font-family: var(--subtitulos);
@@ -202,4 +214,247 @@ body {
         flex: none;
         order: 1;
         flex-grow: 0;
+    }
+
+    @media only screen and (max-width:500px) {
+
+        .logo_poweroros{
+            width: 76px;
+            height: 126px;
+            position: fixed;
+            top: 3%;
+            left: 3%;
+        }
+
+        .seccion_izq_u6 {
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .seccion_izq_u6 img{
+            width: 150px;
+        }
+        .hijo3{
+            width: 100%;
+            height: 10vh;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+            .hijo3 img{
+                width: 50px;
+                
+            }
+            .hijo3 .subHijo3 .hijoSubHijo3-1{
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 26px;
+                color: #000000;
+            }
+            .hijo3 .subHijo3 .hijoSubHijo3-2{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 16px;
+                color: #61656F;
+            }
+            .hijo3 .subHijo3 .hijoSubHijo3-3{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 21px;
+                color: #01C550;
+            }
+            .hijo3 .subHijo3-2 input{
+                width: 160px;
+                height: 51px;
+                background: #E94438;
+                border-radius: 31px;
+                border: none;
+                font-family: var(--subtitulos) ;
+                color: #FDFDFF;
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 33px;
+            }
+
+        .hijo4{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .hijo4 img{
+                width: 50px;
+            }
+            .hijo4 .subHijo4 .hijoSubHijo4-1{
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 26px;
+                color: #000000;
+            }
+            .hijo4 .subHijo4 .hijoSubHijo4-2{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 16px;
+                color: #61656F;
+            }
+            .hijo4 .subHijo4 .hijoSubHijo4-3{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 21px;
+                color: #01C550;
+            }
+            .hijo4 .subHijo4-2 input{
+                width: 160px;
+                height: 51px;
+                background: #E94438;
+                border-radius: 31px;
+                border: none;
+                color: #FDFDFF;
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 33px;
+                /* margin-left: 160px; */
+            }    
+
+    }
+
+
+    @media only screen and (max-width:830px) {
+
+        .seccion_izq_u6{
+            width: 350px;
+        }
+        .hijo3{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .hijo3 img{
+                width: 50px;
+            }
+            .hijo3 .subHijo3 .hijoSubHijo3-1{
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 26px;
+                color: #000000;
+            }
+            .hijo3 .subHijo3 .hijoSubHijo3-2{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 16px;
+                color: #61656F;
+            }
+            .hijo3 .subHijo3 .hijoSubHijo3-3{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 21px;
+                color: #01C550;
+            }
+            .hijo3 .subHijo3-2 input{
+                width: 160px;
+                height: 51px;
+                background: #E94438;
+                border-radius: 31px;
+                border: none;
+                font-family: var(--subtitulos) ;
+                color: #FDFDFF;
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 33px;
+            }
+
+        .hijo4{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .hijo4 img{
+                width: 50px;
+            }
+            .hijo4 .subHijo4 .hijoSubHijo4-1{
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 26px;
+                color: #000000;
+            }
+            .hijo4 .subHijo4 .hijoSubHijo4-2{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 16px;
+                color: #61656F;
+            }
+            .hijo4 .subHijo4 .hijoSubHijo4-3{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 21px;
+                color: #01C550;
+            }
+            .hijo4 .subHijo4-2 input{
+                width: 160px;
+                height: 51px;
+                background: #E94438;
+                border-radius: 31px;
+                border: none;
+                color: #FDFDFF;
+                font-family: var(--nav1_5);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 33px;
+                /* margin-left: 160px; */
+            }    
+
+ 
+
+    }
+
+
+    @media only screen and (max-width:653px) {
+
+        .seccion_izq_u6{
+            width: 250px;
+        }
+
     }
