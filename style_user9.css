@@ -1,113 +1,162 @@
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); /* DM Sans */
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"); /* DM Sans */
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap");
 
 :root {
-    /* fuentes */
-    --nav1_5:  'DM Sans', sans-serif;
-    --titulo_principal: 'Signika', sans-serif;
-    --titulo_principal_amarillo: 'Segoe Print', sans-serif;
-    --subtitulos: 'Roboto', sans-serif;
-    /* coloes */
-    --amarillo: #FACC0A;
-    --negro: #333333;
-    --fondo_naranja_btns: #E94438;
-    --fondo_gris_btns: #FDFDFF;
+  /* fuentes */
+  --nav1_5: "DM Sans", sans-serif;
+  --titulo_principal: "Signika", sans-serif;
+  --titulo_principal_amarillo: "Segoe Print", sans-serif;
+  --subtitulos: "Roboto", sans-serif;
+  /* coloes */
+  --amarillo: #facc0a;
+  --negro: #333333;
+  --fondo_naranja_btns: #e94438;
+  --fondo_gris_btns: #fdfdff;
 }
-  
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    min-height: 100vh;
-    background-image: url(./images/fondo.svg)  ;
-    background-repeat: no-repeat;
-    background-size: cover; 
+  min-height: 100vh;
+  background-image: url(./images/fondo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.contenedor_general_u9{
+.contenedor_general_u9 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo_poweroros {
+  width: 126px;
+  height: 126px;
+  position: fixed;
+  top: 3%;
+  left: 3%;
+}
+.contenedor_general_u9 .titulo_u9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Signika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40.4372px;
+  line-height: 123.19%;
+  text-align: center;
+  letter-spacing: 0;
+}
+.contenedor_general_u9 .carrusel_u9 {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contenedor_general_u9 .carrusel_u9 .card_u9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 240px;
+  left: 0px;
+  top: 0px;
+  background: #fffafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.contenedor_general_u9 .carrusel_u9 .card_u9 .corazon {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  width: 90%;
+}
+.contenedor_general_u9 .carrusel_u9 .card_u9 .plato {
+  margin-top: -17px;
+}
+.contenedor_general_u9 .carrusel_u9 .card_u9 .contenedor_horizontal_u9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--negro);
+}
+.contenedor_horizontal_u9 .union_u9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .contenedor_general_u9{
+    height: 100%;
+  }
+  .titulo_u9{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 50vh;
+  }
+    .logo_poweroros{
+        width: 15%;
+        opacity: 0.5;
+    }
+  .carrusel_u9 {
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor_general_u9 .carrusel_u9 .card_u9 {
+    margin-bottom: 20px;
+  }
+
 }
-.logo_poweroros{
-    width: 126px;
-    height: 126px;
-    position: fixed;
-    top: 3%;
-    left: 3%;
+@media only screen and (max-width: 800px) {
+  .contenedor_general_u9{
+    height: 100%;
+  }
+  .titulo_u9{
+    width: 100%;
+    height: 50vh;
+  }
+    .logo_poweroros{
+        width: 15%;
+        opacity: 0.5;
+    }
+  .carrusel_u9 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor_general_u9 .carrusel_u9 .card_u9 {
+    margin-bottom: 20px;
+  }
+  .flechaGeneral{
+    /* width: 0;
+    height: 0; */
+display: none;
+  }
+
 }
-    .contenedor_general_u9 .titulo_u9{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Signika';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40.4372px;
-        line-height: 123.19%;
-        text-align: center;
-        letter-spacing: 0
-    }
-    .contenedor_general_u9 .carrusel_u9{
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-
-        .contenedor_general_u9 .carrusel_u9 .card_u9{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            width: 160px;
-            height: 240px;
-            left: 0px;
-            top: 0px;
-            background: #FFFAFA;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 15px;
-        }
-            .contenedor_general_u9 .carrusel_u9 .card_u9 .corazon{
-                display: flex;
-                flex-direction: row;
-                justify-content: end;
-                align-items: end;
-                width: 90%;
-            }
-            .contenedor_general_u9 .carrusel_u9 .card_u9 .plato{
-                margin-top: -17px;
-                
-            }
-            .contenedor_general_u9 .carrusel_u9 .card_u9 .contenedor_horizontal_u9{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                width: 100%;
-
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 21px;
-                color: var(--negro);
-            }
-                .contenedor_horizontal_u9 .union_u9{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    align-items: center;
-                    
-                }
